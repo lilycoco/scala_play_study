@@ -31,6 +31,6 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
   
   def hello(name: String) = Action {
-    Ok(views.html.hello())
+    Ok(views.html.hello(name))
   }
 }
