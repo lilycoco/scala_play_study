@@ -30,8 +30,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok(views.html.tutorial())
   }
   
-  def hello() = Action { implicit request: Request[AnyContent] =>
+  def hello(name: String) = Action {
     Ok(views.html.hello())
   }
-
 }
